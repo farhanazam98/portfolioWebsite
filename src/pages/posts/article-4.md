@@ -8,7 +8,7 @@ category: "Narrative"
 project: "https://google.com"
 demo: "https://google.com"
 videoURL: "https://www.youtube.com/embed/h3iMxL7j2PY"
-description: "Chomp is a simple pygame that was given to me as a coding challenge. I was given a rudimentary version of the game, and I added sounds, a scoreboard, spinning shapes, and more. Click to look at the source code."
+description: "Chomp is a simple pygame that was given to me as a coding challenge. I was given a rudimentary version of the game, and I added sounds, a scoreboard, spinning shapes, and more."
 containsVideo: true
 containsImage: false
 featuredImage: "../../img/post/cody-davis-rose.jpg"
