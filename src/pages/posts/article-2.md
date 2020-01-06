@@ -11,6 +11,10 @@ videoURL: "https://www.youtube.com/embed/I-aoac8QBsc"
 description: "I worked with Praxis Labs to create the Sarah Demo, a VR experience in which users take on the perspective of a woman named Sarah, and experience workplace discrimination firsthand. VR has been show to increase empathy, and can be used to transform corporate diversity and inclusion training. "
 containsVideo: true
 containsImage: false
+containsHyperlink: true
+containsDownload: false
+hyperlinkDescription: "To learn more about Praxis Labs, click here"
+hyperlinkURL: "https://www.praxislabs.co/"
 featuredImage: "../../img/post/cassi-josh.jpg"
 ---
 

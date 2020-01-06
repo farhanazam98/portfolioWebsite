@@ -11,7 +11,8 @@ import {
   Freshnew,
   Excrept,
   Card,
-  CardColumns
+  CardColumns,
+  Hyperlink
 } from "../components/style/emo-home-posts";
 
 let minutes = 1000 * 60;
@@ -66,6 +67,20 @@ export default ({ data }) => {
                 <PreTitle>{node.frontmatter.category}</PreTitle>
                 <Title>{node.frontmatter.title}</Title>
                 <Excrept>{node.frontmatter.description}</Excrept>
+                {node.frontmatter.containsHyperlink && (
+                  <Hyperlink>
+                    <a href={node.frontmatter.hyperlinkURL}>
+                      {node.frontmatter.hyperlinkDescription}
+                    </a>
+                  </Hyperlink>
+                )}
+                {node.frontmatter.containsDownload && (
+                  <Hyperlink>
+                    <a href={node.frontmatter.downloadPath}>
+                      {node.frontmatter.downloadDescription}
+                    </a>
+                  </Hyperlink>
+                )}
               </PostInfo>
             </SinglePost>
           </Card>
@@ -97,6 +112,12 @@ export const query = graphql`
             description
             containsVideo
             containsImage
+            containsHyperlink
+            containsDownload
+            hyperlinkURL
+            hyperlinkDescription
+            downloadDescription
+            downloadPath
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 500, maxHeight: 500) {

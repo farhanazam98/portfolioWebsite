@@ -11,6 +11,10 @@ videoURL: "https://www.youtube.com/embed/8Cvmca2X05M"
 description: "This was my final project for CS 248. My partner and I created Blender Man, an interactive real-time 3D model. For the technical component of our project, we implemented a beveling algorithm, which is a feature common to many 3D modeling softwares like Blender or Maya. We also implemented an anisotropic BRDF shader to give our Blender Man a brushed metal look."
 containsVideo: true
 containsImage: false
+containsHyperlink: false
+containsDownload: true
+downloadDescription: "To look at the writeup for this project, click here"
+downloadPath: "blender_man_writeup.pdf"
 featuredImage: "../../img/post/brandi-redd.jpg"
 ---
 

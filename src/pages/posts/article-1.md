@@ -11,6 +11,10 @@ videoURL: "https://www.youtube.com/embed/pHObHONR-dA"
 description: "This was my final project for EE 267. My partner and I created a VR experience in which users can play a virtual piano. We used Leap Motion for hand tracking and Unity for rendering."
 containsVideo: true
 containsImage: false
+containsHyperlink: true
+containsDownload: false
+hyperlinkDescription: "To look at the implementation details, click here"
+hyperlinkURL: "http://stanford.edu/class/ee267/Spring2019/report_azam.pdf"
 featuredImage: "../../img/post/brandi-redd.jpg"
 ---
 

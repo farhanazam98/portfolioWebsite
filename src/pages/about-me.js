@@ -1,8 +1,9 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Img from "gatsby-image";
 import { MainPost, Title, ImageContainer } from "../components/style/emo-post";
+import downloadFile from "../../static/FarhanAzamResume.pdf";
 
 export default ({ data }) => {
   return (
@@ -36,6 +37,9 @@ export default ({ data }) => {
             , creating VR experiences to learn about the effects of VR on
             people. In the future, I work on Computer Vision, one of the
             technologies at the forefront of VR.
+          </p>
+          <p>
+            Feel free to take a look at my <a href={downloadFile}>resume</a>
           </p>
         </div>
       </MainPost>

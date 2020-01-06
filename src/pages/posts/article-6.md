@@ -11,6 +11,10 @@ videoURL: "https://www.youtube.com/embed/pHObHONR-dA"
 description: "This was my final project for CS 148. My partner and I created a raytraced retro space scene. We found the model for the UFO on turbosquid, and we created the rippling water, asteroids, and mountains in Blender."
 containsVideo: false
 containsImage: true
+containsHyperlink: false
+containsDownload: true
+downloadDescription: "To look at the complete full-resolution of this image, click here"
+downloadPath: "retro_space_scene.png"
 featuredImage: "../../img/post/fazam_maina.jpg"
 ---
 
