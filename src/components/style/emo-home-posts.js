@@ -43,7 +43,7 @@ export const SinglePost = styled.div`
     opacity: 0.5;
   }
   & .gatsby-image-wrapper {
-    height: 250px;
+    height: 200px;
   }
   ${mwS.small(css`
     opacity: 1;
@@ -71,8 +71,8 @@ export const Freshnew = styled.span((props) => ({
   right: 0,
 }));
 
-export const Video = styled.span((props) => ({
-  padding: "15px",
+export const Video = styled.section((props) => ({
+  padding: "2em",
 }));
 
 export const Update = styled.span((props) => ({

@@ -21,25 +21,25 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card key={node.id}>
             <SinglePost>
-              <Video>
-                {node.frontmatter.containsVideo && (
-                  <iframe
-                    src={node.frontmatter.videoURL}
-                    title="Space Cadets"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    frameBorder="0"
-                    webkitallowfullscreen="true"
-                    mozallowfullscreen="true"
-                    allowFullScreen
-                  />
-                )}
-              </Video>
               {node.frontmatter.containsImage && (
                 <Img
                   fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
                 />
               )}
               <PostInfo>
+                <Video>
+                  {node.frontmatter.containsVideo && (
+                    <iframe
+                      src={node.frontmatter.videoURL}
+                      title="Space Cadets"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      frameBorder="0"
+                      webkitallowfullscreen="true"
+                      mozallowfullscreen="true"
+                      allowFullScreen
+                    />
+                  )}
+                </Video>
                 <PreTitle>{node.frontmatter.category}</PreTitle>
                 <Title>{node.frontmatter.title}</Title>
                 <Excrept>{node.frontmatter.description}</Excrept>
