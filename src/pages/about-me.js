@@ -16,7 +16,7 @@ export default ({ data }) => {
           </ImageContainer>
         </header>
         <div className={"content"}>
-          <h4>I am a senior at Stanford studying Computer Science</h4>
+          <h4>I am a Software Engineer at Facebook.</h4>
           <p>
             During my junior year, I began exploring subfields within Computer
             Science. I enjoyed the Computer Graphics classes I took, and I
@@ -29,17 +29,17 @@ export default ({ data }) => {
             <a href="https://creator.oculus.com/media-studio/documentation/media-studio/">
               Oculus Media Studio
             </a>
-            , which allows creators to upload their own VR content. Currently, I
-            work at{" "}
+            , which allows creators to upload their own VR content. I also
+            worked at{" "}
             <a href="https://vhil.stanford.edu/">
               Virtual Human Computer Interaction Lab
             </a>
             , creating VR experiences to learn about the effects of VR on
-            people. In the future, I work on Computer Vision, one of the
+            people. In the future, I hope to work on Computer Vision, one of the
             technologies at the forefront of VR.
           </p>
           <p>
-            Feel free to take a look at my <a href={downloadFile}>resume</a>
+            Feel free to take a look at my <a href={downloadFile}>resume</a>.
           </p>
         </div>
       </MainPost>
@@ -49,9 +49,9 @@ export default ({ data }) => {
 
 export const query = graphql`
   query MyQuery {
-    file(relativePath: { eq: "img/about/headshot.jpg" }) {
+    file(relativePath: { eq: "img/about/wow.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 500, maxHeight: 500) {
+        fluid(maxWidth: 500, maxHeight: 650) {
           base64
           aspectRatio
           src

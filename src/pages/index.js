@@ -7,18 +7,12 @@ import {
   PostInfo,
   PreTitle,
   Title,
-  Update,
-  Freshnew,
+  Video,
   Excrept,
   Card,
   CardColumns,
-  Hyperlink
+  Hyperlink,
 } from "../components/style/emo-home-posts";
-
-let minutes = 1000 * 60;
-let hours = minutes * 60;
-let days = hours * 24;
-let months = days * 30;
 
 export default ({ data }) => {
   return (
@@ -27,37 +21,19 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Card key={node.id}>
             <SinglePost>
-              {Math.abs(
-                Math.round(
-                  (new Date(node.frontmatter.update).getTime() -
-                    new Date().getTime()) /
-                    months
-                )
-              ) <= 1 &&
-                node.frontmatter.update !== node.frontmatter.date && (
-                  <Update>Update</Update>
+              <Video>
+                {node.frontmatter.containsVideo && (
+                  <iframe
+                    src={node.frontmatter.videoURL}
+                    title="Space Cadets"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    allowFullScreen
+                  />
                 )}
-              {Math.abs(
-                Math.round(
-                  (new Date(node.frontmatter.update).getTime() -
-                    new Date().getTime()) /
-                    months
-                )
-              ) <= 1 &&
-                node.frontmatter.update === node.frontmatter.date && (
-                  <Freshnew>Fresh New</Freshnew>
-                )}
-              {node.frontmatter.containsVideo && (
-                <iframe
-                  src={node.frontmatter.videoURL}
-                  title="Space Cadets"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  frameBorder="0"
-                  webkitallowfullscreen="true"
-                  mozallowfullscreen="true"
-                  allowFullScreen
-                />
-              )}
+              </Video>
               {node.frontmatter.containsImage && (
                 <Img
                   fluid={node.frontmatter.featuredImage.childImageSharp.fluid}

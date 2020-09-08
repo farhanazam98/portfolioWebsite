@@ -50,61 +50,66 @@ export const SinglePost = styled.div`
   `)};
 `;
 
-export const PostImage = styled.img(props => ({
-  width: "100%"
+export const PostImage = styled.img((props) => ({
+  width: "100%",
 }));
 
-export const PostInfo = styled.div(props => ({}));
+export const PostInfo = styled.div((props) => ({}));
 
-export const PreTitle = styled.h6(props => ({
+export const PreTitle = styled.h6((props) => ({
   fontWeight: "500",
   display: "block",
   padding: "17px",
-  textTransform: "uppercase"
+  textTransform: "uppercase",
 }));
 
-export const Freshnew = styled.span(props => ({
+export const Freshnew = styled.span((props) => ({
   position: "absolute",
   zIndex: 1,
   padding: "15px",
   background: "#a5d6a7",
-  right: 0
+  right: 0,
 }));
-export const Update = styled.span(props => ({
+
+export const Video = styled.span((props) => ({
+  padding: "15px",
+}));
+
+export const Update = styled.span((props) => ({
   position: "absolute",
   zIndex: 1,
   padding: "15px",
   background: "#fdd835",
-  right: 0
+  right: 0,
 }));
 
-export const Title = styled.h4(props => ({
+export const Title = styled.h4((props) => ({
   fontWeight: "500",
   display: "block",
   padding: "17px",
-  paddingBottom: 0
+  paddingBottom: 0,
 }));
 
-export const Subtitle = styled.h5(props => ({
+export const Subtitle = styled.h5((props) => ({
   fontWeight: "200",
   display: "block",
   color: "black",
   paddingLeft: "17px",
-  paddingBottom: "17px"
+  paddingBottom: "17px",
 }));
 
-export const Excrept = styled.p(props => ({
+export const Excrept = styled.p((props) => ({
   padding: "17px",
   paddingTop: 0,
   a: {
-    fontWeight: 700
-  }
+    fontWeight: 700,
+  },
 }));
 
-export const Hyperlink = styled.p(props => ({
+export const Hyperlink = styled.p((props) => ({
   padding: "17px",
   paddingTop: 0,
   a: {
-    fontWeight: 700
-  }
+    fontWeight: 700,
+  },
 }));
