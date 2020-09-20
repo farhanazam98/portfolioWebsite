@@ -71,8 +71,10 @@ export const Freshnew = styled.span((props) => ({
   right: 0,
 }));
 
-export const Video = styled.section((props) => ({
-  padding: "2em",
+export const Video = styled.div((props) => ({
+  display: "flex",
+  width: "100%",
+  justifyContent: "center"
 }));
 
 export const Update = styled.span((props) => ({

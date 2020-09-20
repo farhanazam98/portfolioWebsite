@@ -5,7 +5,6 @@ import Layout from "../components/layout";
 import {
   SinglePost,
   PostInfo,
-  PreTitle,
   Title,
   Video,
   Excrept,
@@ -13,6 +12,7 @@ import {
   CardColumns,
   Hyperlink,
 } from "../components/style/emo-home-posts";
+import Space from "../img/post/fazam_maina.jpg"
 
 export default ({ data }) => {
   return (
@@ -22,9 +22,7 @@ export default ({ data }) => {
           <Card key={node.id}>
             <SinglePost>
               {node.frontmatter.containsImage && (
-                <Img
-                  fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-                />
+                <img src={Space} alt="Space scene" />
               )}
               <PostInfo>
                 <Video>
@@ -40,7 +38,6 @@ export default ({ data }) => {
                     />
                   )}
                 </Video>
-                <PreTitle>{node.frontmatter.category}</PreTitle>
                 <Title>{node.frontmatter.title}</Title>
                 <Excrept>{node.frontmatter.description}</Excrept>
                 {node.frontmatter.containsHyperlink && (
