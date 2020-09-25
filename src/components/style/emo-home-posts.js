@@ -35,6 +35,9 @@ export const CardColumns = styled.div`
 `;
 
 export const SinglePost = styled.div`
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   & .gatsby-image-wrapper {
     -o-transition: 0.2s all ease;
     transition: 0.2s all ease;
@@ -72,8 +75,8 @@ export const Freshnew = styled.span((props) => ({
 }));
 
 export const Video = styled.div((props) => ({
+
   display: "flex",
-  width: "100%",
   justifyContent: "center"
 }));
 
